@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/payment-style.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="RedStore_Img/images/logo.png" width="125px">
+        </div>
+        <nav>
+            <ul id = "MenuItems">
+                <li> <a href="http://localhost:63342/online-shopping/home.html?_ijt=25ge081tiqjqdib9dlnr8ot9ov&_ij_reload=RELOAD_ON_SAVE">Home</a>  </li>
+                <li> <a href="http://localhost:63342/online-shopping/product.html?_ijt=76otiij1eu7srmnv4f61ng7fd9&_ij_reload=RELOAD_ON_SAVE">Products</a>  </li>
+                <li> <a href="">About</a>  </li>
+                <li> <a href="">Contact</a>  </li>
+                <li> <a href="http://localhost:63342/online-shopping/account.html?_ijt=gg3mbnmh4d51erenkijff3o6p3&_ij_reload=RELOAD_ON_SAVE">Account</a>  </li>
+            </ul>
+        </nav>
+        <img src="RedStore_Img/images/cart.png" width="30px" height="30px">
+        <img src="RedStore_Img/images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+<!-------------------------- payment ---------------------------------->
+<div class="container-pay">
+
+    <form action="">
+
+        <div class="row-pay">
+
+            <div class="col-pay">
+
+                <h3 class="title-pay">billing address</h3>
+
+                <div class="inputBox-pay">
+                    <span>full name :</span>
+                    <input type="text" placeholder="john deo">
+                </div>
+                <div class="inputBox-pay">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox-pay">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox-pay">
+                    <span>city :</span>
+                    <input type="text" placeholder="mumbai">
+                </div>
+
+                <div class="flex-pay">
+                    <div class="inputBox-pay">
+                        <span>state :</span>
+                        <input type="text" placeholder="india">
+                    </div>
+                    <div class="inputBox-pay">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-pay">
+
+                <h3 class="title-pay">payment</h3>
+
+                <div class="inputBox-pay">
+                    <span>cards accepted :</span>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox-pay">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. john deo">
+                </div>
+                <div class="inputBox-pay">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox-pay">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="january">
+                </div>
+
+                <div class="flex-pay">
+                    <div class="inputBox-pay">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox-pay">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <input type="submit" value="Pay " class="submit-btn">
+
+    </form>
+
+</div>
+
+
+<!----------------------------------------- footer ---------------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p> Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="RedStore_Img/images/play-store.png">
+                    <img src="RedStore_Img/images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="RedStore_Img/images/logo-white.png" alt="">
+                <p>Our purpose is to sustainble make the pleasure and benefits of sports accessible to rhe many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links </h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Tweeter</li>
+                    <li>Instgram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> Copyright 2024 - SA Progict</p>
+    </div>
+</div>
+<!-------------------- js for toggle menu ----------------------->
+<script>
+    var MenuItems  = document.getElementById("MenuItems") ;
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px" ;
+        }
+        else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
